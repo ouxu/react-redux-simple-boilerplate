@@ -8,7 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');  //用于清除上�
 module.exports = {
     entry: {
         bundle: __dirname + '/app/src/index.js',
-        vendors: ['react', 'react-dom', 'react-router', 'redux']  //第三方库和框架另外打包
+        vendors: ['react', 'react-dom', 'react-router']  //第三方库和框架另外打包
     },
     output: {
         path: './dist/build/',
