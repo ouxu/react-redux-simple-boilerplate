@@ -7,11 +7,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');  //用于清除上�
 
 module.exports = {
     entry: {
-        bundle: __dirname + '/app/src/index.js',
+        bundle: path.join(__dirname, '/app/src/index.js'),
         vendors: ['react', 'react-dom', 'react-router']  //第三方库和框架另外打包
     },
     output: {
-        path: '/dist/build/',
+        path: path.join(__dirname, '/dist/build/'),
         // publicPath: '', //有需要请自己配置，表示 index.html 中引入资源的前缀path
         filename: 'js/bundle.[chunkhash:8].js',
         chunkFilename: 'js/[name].[chunkhash:8].js'
