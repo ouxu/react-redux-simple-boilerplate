@@ -11,8 +11,10 @@
 
 ### 使用无 Redux 版
 ```bash
-
+git checkout no-redux
 ```
+
+在使用时将 .git 文件夹删除，重新 init 即可
 ### Features
 * 开发环境单文件打包
 * 生产环境分块打包
