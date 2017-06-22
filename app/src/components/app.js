@@ -17,7 +17,7 @@ class AppComponent extends Component {
         </div>
         <p className="App-intro">
           <Link to="demo">
-            欢迎使用 react-redux请查看代码，结合自己所学知识开始你的React之旅！
+            欢迎使用!请查看代码，结合自己所学知识开始你的React之旅！
           </Link>
         </p>
         {this.props.children}

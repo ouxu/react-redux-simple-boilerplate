@@ -11,7 +11,7 @@
 
 ### 使用无 Redux 版
 ```bash
-
+git checkout no-redux
 ```
 ### Features
 * 开发环境单文件打包
