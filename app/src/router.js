@@ -1,18 +1,17 @@
-import React from "react";
-import {Router, Route, IndexRoute, hashHistory} from "react-router";
+import React from 'react'
+import { hashHistory, Route, Router } from 'react-router'
 
+import AppComponent from './components/app'
+import DemoContainer from './containers/demo.container'
 
-import AppComponent from "./components/app";
-import DemoContainer from './containers/demo.container';
+const RouterApp = () => (
+  <Router history={hashHistory}>
+    <Route path="/" component={AppComponent}>
+      {/*<IndexRoute component={}/>*/}
+      <Route path="demo" component={DemoContainer} />
+    </Route>
 
-const RouterApp = (
-    <Router history={hashHistory}>
-        <Route path="/" component={AppComponent}>
-            {/*<IndexRoute component={}/>*/}
-            <Route path="demo" component={DemoContainer} />
-        </Route>
+  </Router>
+)
 
-    </Router>
-);
-
-export default RouterApp;
+export default RouterApp

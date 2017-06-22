@@ -1,1 +1,1 @@
-export {getDemo} from './demo.action'
+export { getDemo } from './demo.action'
